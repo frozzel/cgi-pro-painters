@@ -16,7 +16,7 @@ import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
 export default () => (
-  <AnimationRevealPage>
+  <AnimationRevealPage disable>
     <Hero />
     <MainFeature />
     <Features />

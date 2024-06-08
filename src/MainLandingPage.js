@@ -133,7 +133,7 @@ export default ({
   ];
 
   return (
-    <AnimationRevealPage enabled>
+    <AnimationRevealPage disable>
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
         <Content2Xl>
           <NavRow>
