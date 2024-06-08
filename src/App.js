@@ -104,7 +104,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUs from "pages/AboutUs.js";
 
 export default function App() {
@@ -115,7 +115,6 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
-      <BrowserRouter>
       <Router>
         <Routes>
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
@@ -126,7 +125,6 @@ export default function App() {
           <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
       </Router>
-      </BrowserRouter>
     </>
   );
 }
