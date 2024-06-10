@@ -9,17 +9,17 @@ import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
 
-import SupportIconImage from "../../images/support-icon.svg";
-import ShieldIconImage from "../../images/shield-icon.svg";
-import CustomizeIconImage from "../../images/customize-icon.svg";
-import FastIconImage from "../../images/fast-icon.svg";
-import ReliableIconImage from "../../images/reliable-icon.svg";
-import SimpleIconImage from "../../images/simple-icon.svg";
+import SupportIconImage from "../../images/paint-roller-1-svgrepo-com.svg";
+import ShieldIconImage from "../../images/paint-brush-svgrepo-com.svg";
+import CustomizeIconImage from "../../images/hammer-fill-svgrepo-com.svg";
+import FastIconImage from "../../images/ladder-tool-svgrepo-com.svg";
+import ReliableIconImage from "../../images/saw-illustration-1-svgrepo-com.svg";
+import SimpleIconImage from "../../images/paint-palette-art-svgrepo-com.svg";
 
-const Container = tw.div`relative`;
+const Container = tw.div`relative `;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
+  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24 `}
 `;
 const Heading = tw(SectionHeading)`w-full`;
 
@@ -28,9 +28,9 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-primary-500 rounded-lg mt-12`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-white rounded-lg mt-12`}
   .imageContainer {
-    ${tw`border-2 border-primary-500 text-center rounded-full p-6 flex-shrink-0 relative`}
+    ${tw`border-2 border-white text-center rounded-full p-6 flex-shrink-0 relative`}
     img {
       ${tw`w-8 h-8`}
     }
@@ -41,11 +41,11 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-primary-500`}
+    ${tw`mt-2 font-bold text-xl leading-none text-white`}
   }
 
   .description {
-    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-loose`}
+    ${tw`mt-3 font-semibold text-gray-400 text-sm leading-loose`}
   }
 `;
 
@@ -65,20 +65,33 @@ export default () => {
   const cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Ads Management",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      title: "Interior Painting",
+      description: "CGI Pro Painters® provides a range of custom interior painting services, allowing for a smooth, seamless experience and exceptional results in every home."
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    { imageSrc: SupportIconImage, title: "Exterior Painting",
+      description: "CGI Pro Painters® offers professional exterior house painting services. We can help with all types of exterior home surfaces including wood, siding, stucco and more."
+     },
+     { imageSrc: SimpleIconImage, title: "Color Consultation",
+      description: "Not sure which shade to choose? Struggling to differentiate matte, satin and gloss? We’ll help you navigate the sea of options to find a color that matches your home’s interior aesthetic and stands up to your family’s daily routine."
+    },
+    { imageSrc: CustomizeIconImage, title: "Drywall Repair", 
+      description: "Whether your home has water damage that requires drywall repair or your walls have medium-to-large holes that need patching, the CGI Pro Painters® crew will patch, sand and prime, to create a flawless surface to paint on."
+    },
+    { imageSrc: ReliableIconImage, title: "Crown Molding Installation",
+      description: "Crown molding is a great way to add elegance in a home. It is timeless, ornate and exquisite looking. The CGI Pro Painters® team can work install decorative borders around your home including fireplace mantels, baseboards, door casings, and wainscoting."
+    },
+    { imageSrc: FastIconImage, title: "Deck Staining/Painting", 
+      description: "Protect your home’s exterior from Mother Nature with our variety of exterior home painting and staining services, including your home’s deck and fencing. Our team works with you to determine the best plan of action for your home."
+     },
+
   ];
+  const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
 
   return (
+ <PrimaryBackgroundContainer>
     <Container>
-      <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+      <ThreeColumnContainer id="services">
+        <Heading>Our Professional <span tw="text-white">Services</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
@@ -97,5 +110,7 @@ export default () => {
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>
+    </PrimaryBackgroundContainer>
+
   );
 };

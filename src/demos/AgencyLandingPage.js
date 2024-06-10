@@ -6,8 +6,8 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/BackgroundAsImage.js";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
+// import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
+// import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
@@ -20,8 +20,8 @@ export default () => (
     <Hero />
     <MainFeature />
     <Features />
-    <MainFeature2 />
-    <Portfolio />
+    {/* <MainFeature2 /> */}
+    {/* <Portfolio /> */}
     <Testimonial
       subheading="Testimonials"
       heading={
