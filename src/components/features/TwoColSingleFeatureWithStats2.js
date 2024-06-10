@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import StatsIllustrationSrc from "images/stats-illustration.svg";
+import StatsIllustrationSrc from "images/paintbucket-removebg.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
@@ -18,7 +18,7 @@ const TextColumn = styled(Column)(props => [
 
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-contain bg-no-repeat bg-center h-full`
+  tw`rounded bg-contain bg-no-repeat bg-center w-full h-full`,
 ]);
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
@@ -43,10 +43,11 @@ export default ({
   subheading = "Our Track Record",
   heading = (
     <>
-      We have been doing this <wbr /> since <span tw="text-primary-500">1999.</span>
+      Your Expert House Painters
+      <wbr /> since <span tw="text-primary-500">2018.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "CGI Pro Painters® offers professional interior and exterior house painting services to locations in the greater metro Atlanta area. We take great pride in our quality painting services and high customer reviews. Click one of the links below to learn more about the painting services we offer.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = StatsIllustrationSrc,
@@ -70,7 +71,7 @@ export default ({
       value: "3891+"
     },
     {
-      key: "Awards",
+      key: "Reviews",
       value: "1000+"
     }
   ];
@@ -79,7 +80,7 @@ export default ({
 
   return (
     <Container>
-      <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
+      <TwoColumn id="about" css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss}>
           {imageInsideDiv ? <Image imageSrc={imageSrc} css={imageCss} /> : <img src={imageSrc} css={imageCss} alt="" />}
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}

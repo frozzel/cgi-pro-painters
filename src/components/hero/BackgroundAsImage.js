@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import paint from "images/paintingheader.jpeg";
+import paint from "images/downloaded-image.png";
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 // import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
@@ -17,8 +17,9 @@ const StyledHeader = styled(Header)`
   }
 `;
 const Container = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover align-top	h-screen `}
   background-image: url(${paint});
+  	
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
@@ -43,7 +44,7 @@ const SlantedBackground = styled.span`
   }
 `;
 
-// const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
+const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm sm:text-sm lg:text-lg md:text-lg`;
 
 const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
@@ -59,17 +60,20 @@ const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
+      <NavLink href="#about">
         About
       </NavLink>
       <NavLink href="#">
         Blog
       </NavLink>
-      <NavLink href="#">
-        Locations
+      <NavLink href="#services">
+        Services
       </NavLink>
-      <NavLink href="#">
-        Pricing
+      <NavLink href="#contactus">
+        Contact Us
+      </NavLink>
+      <NavLink href="#testimonials">
+        Testimonials
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
@@ -85,20 +89,21 @@ export default () => {
       <HeroContainer>
         <StyledHeader links={navLinks} />
         <TwoColumn>
-        <LeftColumn>
-            {/* <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
-              background="transparent"
-            /> */}
-          </LeftColumn>
-          <RightColumn>
-            {/* <Notification>We have now launched operations in Europe.</Notification> */}
+
+          <LeftColumn>
+            <Notification>Book Today - Schedules are filling fast</Notification>
             <Heading>
               <span>Hire the best</span>
               <br />
               <SlantedBackground>Expert Painters</SlantedBackground>
             </Heading>
             <PrimaryAction>Read Customer Stories</PrimaryAction>
+          </LeftColumn>
+          <RightColumn>
+            {/* <StyledResponsiveVideoEmbed
+              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+              background="transparent"
+            /> */}
           </RightColumn>
   
         </TwoColumn>
