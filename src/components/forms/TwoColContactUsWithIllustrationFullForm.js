@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import EmailIllustrationSrc from "images/email-illustration.svg";
+import EmailIllustrationSrc from "images/mailbox.png";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -36,7 +36,7 @@ const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 export default ({
   subheading = "Contact Us",
   heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Please contact us with any questions or concerns, and we will respond as soon as possible.",
   submitButtonText = "Send",
   formAction = "#",
   formMethod = "get",
@@ -45,7 +45,7 @@ export default ({
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
   return (
-    <Container>
+    <Container id="contactus">
       <TwoColumn>
         <ImageColumn>
           <Image imageSrc={EmailIllustrationSrc} />
