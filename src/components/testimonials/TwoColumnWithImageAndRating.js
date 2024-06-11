@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import loveIllustrationImageSrc from "images/love-illustration.svg";
+import loveIllustrationImageSrc from "images/heart2.png";
 import { ReactComponent as StarIconBase } from "images/star-icon.svg";
 import { ReactComponent as ArrowLeftIcon } from "images/arrow-left-3-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
@@ -53,7 +53,7 @@ const CustomerInfo = tw.div`flex flex-col sm:flex-row items-center justify-cente
 const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`;
 const CustomerTextInfo = tw.div`text-center md:text-left sm:ml-6 mt-2 sm:mt-0`;
 const CustomerName = tw.h5`font-bold text-xl`;
-const CustomerTitle = tw.p`font-medium text-secondary-100`;
+// const CustomerTitle = tw.p`font-medium text-secondary-100`;
 
 const Controls = styled.div`
   ${tw`flex mt-8 sm:mt-0`}
@@ -75,35 +75,57 @@ export default ({
   imageShadow = false,
   subheading = "Testimonials",
   heading = "Our Clients Love Us.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
+  description = "At CGI Pro Painters, we take pride in delivering exceptional service and quality craftsmanship to our clients. Our testimonials section showcases the genuine feedback from our satisfied customers, reflecting their experiences and the high standards we uphold. From meticulous attention to detail to outstanding customer service, read firsthand accounts of why CGI Pro Painters is the trusted choice for all your painting needs.",
   textOnLeft = false,
   testimonials = [
     {
-      stars: 5,
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      heading: "Amazing User Experience",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
+      "stars": 5,
+      "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "heading": "Exceptional Craftsmanship",
+      "quote": "CGI Pro Painters transformed our home with their expert craftsmanship and attention to detail. Highly recommend!",
+      "customerName": "Sarah M."
     },
     {
-      stars: 5,
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      heading: "Love the Developer Experience and Design Principles !",
-      quote:
-        "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
+      "stars": 5,
+      "profileImageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "heading": "Professional and Punctual",
+      "quote": "The team at CGI Pro Painters was professional, punctual, and their work exceeded our expectations. Our house looks fantastic!",
+      "customerName": "John L."
+    },
+    {
+      "stars": 5,
+      "profileImageSrc": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "heading": "Thrilled with the Results",
+      "quote": "We were thrilled with the quality and efficiency of CGI Pro Painters. Our rooms have never looked better!",
+      "customerName": "Emily R."
+    },
+    {
+      "stars": 5,
+      "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "heading": "Stunning Exterior Work",
+      "quote": "CGI Pro Painters did an amazing job on our exterior painting project. The results are stunning!",
+      "customerName": "Michael T."
+    },
+    {
+      "stars": 5,
+      "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "heading": "Courteous and Skilled Crew",
+      "quote": "The crew was courteous, clean, and incredibly skilled. CGI Pro Painters made our vision a reality!",
+      "customerName": "Lisa K."
+    },
+    {
+      "stars": 5,
+      "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "heading": "Top-Notch Service",
+      "quote": "From start to finish, CGI Pro Painters provided top-notch service and impeccable results. We couldn’t be happier!",
+      "customerName": "Mark D."
     }
   ]
 }) => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Container>
+    <Container id="testimonials">
       <ContentWithPaddingXl>
         <Row>
           <ImageColumn>
@@ -128,7 +150,7 @@ export default ({
                       <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} />
                       <CustomerTextInfo>
                         <CustomerName>{testimonial.customerName}</CustomerName>
-                        <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
+                        {/* <CustomerTitle>{testimonial.customerTitle}</CustomerTitle> */}
                       </CustomerTextInfo>
                     </CustomerInfo>
                     <Controls>

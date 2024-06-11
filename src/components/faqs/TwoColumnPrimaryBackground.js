@@ -30,38 +30,33 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 export default ({
   subheading = "",
   heading = "Frequently Asked Questions",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Here are some frequently asked questions from our loving customers. Should you have any other questions, feel free to reach out via the contact form below.",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+      "question": "How much does it cost to paint a house interior?",
+      "answer": "The cost of interior painting will vary depending on several factors including the square footage, the number of coats, the conditions of the surfaces, how much the color is changing, the height of the walls, and the labor rate in the region the home is located. To get accurate pricing for your unique painting project, set up a free estimate appointment."
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "question": "Do I need to move furniture before the crew arrives?",
+      "answer": "Your local painting team will cover and protect the furniture and floors, but if there is a delicate piece of furniture or an heirloom that is tricky to move, please remove it before your painting team arrives or make sure you notify the Job Site Supervisor before they begin the project."
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "question": "Can you match the paint color already on the walls?",
+      "answer": "CGI Pro Painters can match just about any paint color on your home using a chip of paint or wet sample. Even if you do not remember the original color codes, we can still match the color."
     },
     {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "question": "What are the trending interior paint colors this year?",
+      "answer": "Popular paint colors change every few years, right now white, gray, and shades of tan are all very popular color choices for interior walls. Check out our blog for updated color trends."
     },
     {
-      question: "What kind of SLA Guarantee do you provide ? ",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "question": "Can you repair damage to trim or walls as part of the project?",
+      "answer": "It depends on the scope of the damage, but in many cases, yes. CGI Pro Painters can patch damaged sections of drywall and minor repair cracks in walls and ceilings as they prep for your painting project."
     },
     {
-      question: "Where are the servers located ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "question": "How long will the painting project take?",
+      "answer": "The duration of the painting project will depend on the size of your home, the number of rooms being painted, the amount of prep work needed, and the complexity of the project. Our Pro Painter team can provide a more accurate timeline during your free estimate appointment."
     }
+
   ]
 }) => {
   const faqCol1 = [];
@@ -110,7 +105,7 @@ export default ({
     return null;
   });
   return (
-    <PrimaryBackgroundContainer>
+    <PrimaryBackgroundContainer id="FAQ">
       <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import paint from "images/downloaded-image.png";
 
-import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 // import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const StyledHeader = styled(Header)`
@@ -58,36 +58,36 @@ const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm
 // `;
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="#about">
-        About
-      </NavLink>
-      <NavLink href="#">
-        Blog
-      </NavLink>
-      <NavLink href="#services">
-        Services
-      </NavLink>
-      <NavLink href="#contactus">
-        Contact Us
-      </NavLink>
-      <NavLink href="#testimonials">
-        Testimonials
-      </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
-      </PrimaryLink>
-    </NavLinks>
-  ];
+  // const navLinks = [
+  //   <NavLinks key={1}>
+  //     <NavLink href="#about">
+  //       About
+  //     </NavLink>
+  //     <NavLink href="#">
+  //       Blog
+  //     </NavLink>
+  //     <NavLink href="#services">
+  //       Services
+  //     </NavLink>
+  //     <NavLink href="#contactus">
+  //       Contact Us
+  //     </NavLink>
+  //     <NavLink href="#testimonials">
+  //       Testimonials
+  //     </NavLink>
+  //   </NavLinks>,
+  //   <NavLinks key={2}>
+  //     <PrimaryLink href="/#">
+  //       Hire Us
+  //     </PrimaryLink>
+  //   </NavLinks>
+  // ];
 
   return (
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader  />
         <TwoColumn>
 
           <LeftColumn>

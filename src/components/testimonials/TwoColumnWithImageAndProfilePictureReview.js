@@ -77,26 +77,48 @@ export default ({
    * You can add or remove objects from the array as you need.
    */
   const defaultTestimonials = [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1523952578875-e6bb18b26645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      quote:
-        "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
-    }
+     {
+    "stars": 5,
+    "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+    "heading": "Exceptional Craftsmanship",
+    "quote": "CGI Pro Painters transformed our home with their expert craftsmanship and attention to detail. Highly recommend!",
+    "customerName": "Sarah M."
+  },
+  {
+    "stars": 5,
+    "profileImageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+    "heading": "Professional and Punctual",
+    "quote": "The team at CGI Pro Painters was professional, punctual, and their work exceeded our expectations. Our house looks fantastic!",
+    "customerName": "John L."
+  },
+  {
+    "stars": 5,
+    "profileImageSrc": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+    "heading": "Thrilled with the Results",
+    "quote": "We were thrilled with the quality and efficiency of CGI Pro Painters. Our rooms have never looked better!",
+    "customerName": "Emily R."
+  },
+  {
+    "stars": 5,
+    "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+    "heading": "Stunning Exterior Work",
+    "quote": "CGI Pro Painters did an amazing job on our exterior painting project. The results are stunning!",
+    "customerName": "Michael T."
+  },
+  {
+    "stars": 5,
+    "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+    "heading": "Courteous and Skilled Crew",
+    "quote": "The crew was courteous, clean, and incredibly skilled. CGI Pro Painters made our vision a reality!",
+    "customerName": "Lisa K."
+  },
+  {
+    "stars": 5,
+    "profileImageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+    "heading": "Top-Notch Service",
+    "quote": "From start to finish, CGI Pro Painters provided top-notch service and impeccable results. We couldn’t be happier!",
+    "customerName": "Mark D."
+  }
   ];
 
   if (!testimonials || testimonials.length === 0) testimonials = defaultTestimonials;
