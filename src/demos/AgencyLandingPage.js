@@ -91,37 +91,6 @@ export default () => (
     />
     {/* <Blog /> */}
     <ContactUsForm />
-    <button
-  type="button"
-  id="hs_show_banner_button"
-  style={{
-    backgroundColor: '#5a13e6',
-    border: '1px solid #5a13e6',
-    borderRadius: '3px',
-    padding: '10px 16px',
-    textDecoration: 'none',
-    color: '#fff',
-    fontFamily: 'inherit',
-    fontSize: 'inherit',
-    fontWeight: 'normal',
-    lineHeight: 'inherit',
-    textAlign: 'left',
-    textShadow: 'none',
-    zIndex: 9999 // High value to ensure it's on top
-
-  }}
-  onClick={function() {
-    var _hsp = window._hsp = window._hsp || [];
-    _hsp.push(['showBanner']);
-  }}
->
-  Cookie Settings
-</button>
     <Footer />
-  
-
-
-
-
   </AnimationRevealPage>
 );
