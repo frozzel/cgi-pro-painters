@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+// import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import EmailIllustrationSrc from "images/mailbox.png";
 
 const Container = tw.div`relative`;
@@ -26,12 +26,32 @@ const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4x
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
 
 const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`
-const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
-const Textarea = styled(Input).attrs({as: "textarea"})`
-  ${tw`h-24`}
-`
+// const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
+// const Textarea = styled(Input).attrs({as: "textarea"})`
+//   ${tw`h-24`}
+// `
 
-const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
+// const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
+
+const HubspotContactForm = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "46454690",
+          formId: "cd4ebe50-bd8f-49bb-9156-b8f7b486a392",
+          target: "#hubspotForm",
+        });
+      }
+    });
+  }, []);
+
+  return <div id="hubspotForm" />;
+}
 
 export default ({
   subheading = "Contact Us",
@@ -51,16 +71,21 @@ export default ({
           <Image imageSrc={EmailIllustrationSrc} />
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
+       
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
+            <br />
+            <HubspotContactForm />
+           
             <Form action={formAction} method={formMethod}>
-              <Input type="email" name="email" placeholder="Your Email Address" />
+            <HubspotContactForm />
+              {/* <Input type="email" name="email" placeholder="Your Email Address" />
               <Input type="text" name="name" placeholder="Full Name" />
               <Input type="text" name="subject" placeholder="Subject" />
               <Textarea name="message" placeholder="Your Message Here" />
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
+              <SubmitButton type="submit">{submitButtonText}</SubmitButton> */}
             </Form>
           </TextContent>
         </TextColumn>

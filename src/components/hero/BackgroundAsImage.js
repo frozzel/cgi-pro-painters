@@ -57,6 +57,17 @@ const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm
 //   }
 // `;
 
+const handleNavLinkClick = (event) => {
+  // Prevent default scrolling behavior
+  event.preventDefault();
+  // Get the target element's ID from the href attribute
+  const targetId = event.currentTarget.getAttribute("href").substring(1);
+  // Scroll to the target element
+  document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+  // Close the navbar
+  ;
+};
+
 export default () => {
   // const navLinks = [
   //   <NavLinks key={1}>
@@ -97,7 +108,7 @@ export default () => {
               <br />
               <SlantedBackground>Expert Painters</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            <PrimaryAction href="#testimonials" onClick={handleNavLinkClick}>Read Customer Stories</PrimaryAction>
           </LeftColumn>
           <RightColumn>
             {/* <StyledResponsiveVideoEmbed
