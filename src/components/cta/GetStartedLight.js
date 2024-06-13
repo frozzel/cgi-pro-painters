@@ -26,9 +26,9 @@ export default ({
   subheading = "Get in touch with us",
   heading = "today to get a free quote.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "http://timerse.com",
+  primaryLinkUrl = "https://meetings.hubspot.com/cgipropainters/quote",
   secondaryLinkText = "Contact Us",
-  secondaryLinkUrl = "http://google.com",
+  secondaryLinkUrl = "/#contactus",
   pushDownFooter = true
 }) => {
   return (
