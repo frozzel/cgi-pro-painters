@@ -106,6 +106,7 @@ import ThankYouPage from "ThankYouPage.js";
 
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import Meeting from "demos/Meeting.js";
 
 // import AboutUs from "pages/AboutUs.js";
 
@@ -126,7 +127,7 @@ export default function App() {
           <Route path="/" element={<AgencyLandingPage />} />
           <Route path="*" element={<AgencyLandingPage />} />
           <Route path="/MainLandingPage" element={<MainLandingPage />} />
-        
+          <Route path="/meeting" element={<Meeting />} />
           
         </Routes>
       {/* </Router> */}
