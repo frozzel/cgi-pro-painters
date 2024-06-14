@@ -100,7 +100,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="https://meetings.hubspot.com/cgipropainters/quote" onClick={toggleNavbar}>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/meeting" onClick={toggleNavbar}>
         Hire Us
       </PrimaryLink>
     </NavLinks>

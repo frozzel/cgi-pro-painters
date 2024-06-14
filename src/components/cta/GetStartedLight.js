@@ -26,7 +26,7 @@ export default ({
   subheading = "Get in touch with us",
   heading = "today to get a free quote.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "https://meetings.hubspot.com/cgipropainters/quote",
+  primaryLinkUrl = "/meeting",
   secondaryLinkText = "Contact Us",
   secondaryLinkUrl = "/#contactus",
   pushDownFooter = true
