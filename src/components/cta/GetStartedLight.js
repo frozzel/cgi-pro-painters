@@ -41,17 +41,11 @@ export default ({
             <Heading>{heading}</Heading>
           </TextContainer>
           <LinksContainer>
-            <PrimaryLink class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352" data-hubspot-wrapper-cta-id="170480579352" rel="noopener" crossorigin="anonymous" href={primaryLinkUrl}>{primaryLinkText}
+            <PrimaryLink className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352" data-hubspot-wrapper-cta-id="170480579352" rel="noopener" crossOrigin="anonymous" href={primaryLinkUrl}>{primaryLinkText}
             <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill', display: "none"}}
-              onerror="this.style.display='none'" />
+               />
             </PrimaryLink>
-            {/* <div class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352"
-  style={{ maxWidth: '100%', maxHeight: '100%', width: '177px', height: '66px' }} data-hubspot-wrapper-cta-id="170480579352">
-  <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLmDkd7lE3krdCth%2BLjSIzk%2F0iqeD6L9jSNLIU1e4b3ufrbgvAoTTe4yUhVbwJGnMrIOJq73SKSaOQvMy6QockwngvMBjV7uzkUv5rGM4dZ1Z0%3D&webInteractiveContentId=170480579352&portalId=46454690" rel="noopener" crossorigin="anonymous">
-    <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill' }}
-      onerror="this.style.display='none'" />
-  </a>
-</div> */}
+
 
             <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink>
           </LinksContainer>
