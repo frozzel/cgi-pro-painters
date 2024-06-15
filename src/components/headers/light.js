@@ -100,7 +100,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} className="hs-cta-trigger-button hs-cta-trigger-button-170452886306" onClick={toggleNavbar}>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/meeting" onClick={toggleNavbar}>
         Hire Us
       </PrimaryLink>
     </NavLinks>

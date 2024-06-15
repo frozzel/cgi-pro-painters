@@ -49,7 +49,7 @@ export default ({
   ),
   description = "CGI Pro Painters® offers professional interior and exterior house painting services to locations in the greater metro Atlanta area. We take great pride in our quality painting services and high customer reviews. Click one of the links below to learn more about the painting services we offer.",
   primaryButtonText = "Free Estimate",
-  primaryButtonUrl = "",
+  primaryButtonUrl = "/meeting",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -98,7 +98,7 @@ export default ({
                 </Statistic>
               ))}
             </Statistics>
-            <PrimaryButton className="hs-cta-trigger-button hs-cta-trigger-button-170452886306" as="a" href={primaryButtonUrl}>
+            <PrimaryButton as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
           </TextContent>

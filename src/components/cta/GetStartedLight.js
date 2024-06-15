@@ -26,7 +26,7 @@ export default ({
   subheading = "Get in touch with us",
   heading = "today to get a free quote.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "",
+  primaryLinkUrl = "/meeting",
   secondaryLinkText = "Contact Us",
   secondaryLinkUrl = "/#contactus",
   pushDownFooter = true
@@ -41,7 +41,7 @@ export default ({
             <Heading>{heading}</Heading>
           </TextContainer>
           <LinksContainer>
-            <PrimaryLink className="hs-cta-trigger-button hs-cta-trigger-button-170452886306" href={primaryLinkUrl}>{primaryLinkText}</PrimaryLink>
+            <PrimaryLink href={primaryLinkUrl}>{primaryLinkText}</PrimaryLink>
             <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink>
           </LinksContainer>
         </Row>
