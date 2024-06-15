@@ -42,8 +42,8 @@ export default ({
           </TextContainer>
           <LinksContainer>
             <PrimaryLink className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352" data-hubspot-wrapper-cta-id="170480579352" rel="noopener" crossOrigin="anonymous" href={primaryLinkUrl}>{primaryLinkText}
-            <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill', display: "none"}}
-               />
+            {/* <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill', display: "none"}}
+               /> */}
             </PrimaryLink>
 
 
