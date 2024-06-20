@@ -7,7 +7,7 @@ import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 // import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 import { ReactComponent as InstagramIcon } from "../../images/instagram-svgrepo-com.svg";
-import { ReactComponent as LinkedinIcon } from "../../images/linkedin-icon.svg";
+// import { ReactComponent as LinkedinIcon } from "../../images/linkedin-icon.svg";
 
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
@@ -55,12 +55,12 @@ export default () => {
             <SocialLink href="https://facebook.com" target="_blank">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com" target="_blank">
+            <SocialLink href="https://x.com/CgiProPainters" target="_blank">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com" target="_blank">
+            {/* <SocialLink href="https://youtube.com" target="_blank">
               <LinkedinIcon />
-            </SocialLink>
+            </SocialLink> */}
             <SocialLink href="https://youtube.com" target="_blank">
               <InstagramIcon />
             </SocialLink>
