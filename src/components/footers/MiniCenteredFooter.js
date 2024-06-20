@@ -52,7 +52,7 @@ export default () => {
             <Link href="#FAQ">FAQs</Link>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com" target="_blank">
+            <SocialLink href="https://www.facebook.com/profile.php?id=61560853426094" target="_blank">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://x.com/CgiProPainters" target="_blank">
