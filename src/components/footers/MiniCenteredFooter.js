@@ -61,7 +61,7 @@ export default () => {
             {/* <SocialLink href="https://youtube.com" target="_blank">
               <LinkedinIcon />
             </SocialLink> */}
-            <SocialLink href="https://youtube.com" target="_blank">
+            <SocialLink href="https://www.instagram.com/cgipropainters/" target="_blank">
               <InstagramIcon />
             </SocialLink>
           </SocialLinksContainer>
