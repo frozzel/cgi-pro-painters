@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import GlobalStyles from 'styles/GlobalStyles';
 import { css } from "styled-components/macro"; //eslint-disable-line
+import ReactGA from 'react-ga4';
+
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -113,7 +115,12 @@ import Meeting from "demos/Meeting.js";
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
+  ReactGA.initialize('G-HERNN0Y37E');
 
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+  
 
   return (
     <>
@@ -123,10 +130,10 @@ export default function App() {
         <Routes>
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
+          {/* <Route path="/thank-you" element={<ThankYouPage />} /> */}
           <Route path="/" element={<AgencyLandingPage />} />
           <Route path="*" element={<AgencyLandingPage />} />
-          <Route path="/MainLandingPage" element={<MainLandingPage />} />
+          {/* <Route path="/MainLandingPage" element={<MainLandingPage />} /> */}
           <Route path="/meeting" element={<Meeting />} />
           
         </Routes>
