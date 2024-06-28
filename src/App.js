@@ -103,8 +103,8 @@ import AgencyLandingPage from "demos/AgencyLandingPage.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
+// import MainLandingPage from "MainLandingPage.js";
+// import ThankYouPage from "ThankYouPage.js";
 
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BrowserRouter, Routes, Route, } from "react-router-dom";

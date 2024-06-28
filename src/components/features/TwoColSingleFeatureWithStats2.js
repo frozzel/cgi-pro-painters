@@ -6,6 +6,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 // import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/paintbucket-removebg.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
+import ReactGA from 'react-ga4';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -78,6 +79,16 @@ export default ({
 
   if (!statistics) statistics = defaultStatistics;
 
+  const handleButtonClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked on Free Estimate Button',
+      label: 'Free Estimate Button'
+    });
+  };
+
+  
+
   return (
     <Container>
       <TwoColumn id="about" css={!imageInsideDiv && tw`md:items-center`}>
@@ -103,7 +114,7 @@ export default ({
             </PrimaryButton> */}
             <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170452886386"
                 style={{ maxWidth: '100%', maxHeight: '100%', width: '156px', height: '45px', marginTop: '40px' }} data-hubspot-wrapper-cta-id="170452886386">
-                <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLvw8B5bZJZfbYEYvo7x2yi6UO%2FxOnIa6O6oFcLu%2FU5uSisMF8e9MyLUB%2FCw3OA689jnOJideCVefZ7gnsh6Rh2I9EQzOBXVYMc45QU9yssGtYc9oI4GTMznqV77Vimsj1CwzDKt1%2FXJ%2FgxjK%2FCh%2FwScnyHTS%2FVCAkBgdI%3D&webInteractiveContentId=170452886386&portalId=46454690"  rel="noopener" crossOrigin="anonymous">
+                <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLvw8B5bZJZfbYEYvo7x2yi6UO%2FxOnIa6O6oFcLu%2FU5uSisMF8e9MyLUB%2FCw3OA689jnOJideCVefZ7gnsh6Rh2I9EQzOBXVYMc45QU9yssGtYc9oI4GTMznqV77Vimsj1CwzDKt1%2FXJ%2FgxjK%2FCh%2FwScnyHTS%2FVCAkBgdI%3D&webInteractiveContentId=170452886386&portalId=46454690"  rel="noopener" crossOrigin="anonymous" onClick={handleButtonClick}>
                   <img alt="Free Estimate " loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170452886386.png" style={{ height: '100%', width: '100%', objectFit: 'fill' }}
                     />
                 </a>
