@@ -3,6 +3,8 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 import { ContentWithPaddingXl, Container } from "components/misc/Layouts";
+import ReactGA from 'react-ga4';
+
 
 const PrimaryBackgroundContainer = tw.div`py-16 lg:py-20 bg-purple-200 rounded-lg relative`
 const Row = tw.div`px-4 sm:px-16 mx-auto flex justify-center items-center relative z-10 flex-col lg:flex-row text-center lg:text-left`;
@@ -31,6 +33,14 @@ export default ({
   secondaryLinkUrl = "/#contactus",
   pushDownFooter = true
 }) => {
+
+  const handleButtonClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked Testimonials',
+      label: 'Free Estimate Button'
+    });
+  };
   return (
     <Container css={pushDownFooter && tw`mb-20 lg:mb-24`}>
       <ContentWithPaddingXl>
@@ -51,7 +61,7 @@ export default ({
 
             <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352"
               style={{ maxWidth: '100%', maxHeight: '100%', width: '177px', height: '66px'}} data-hubspot-wrapper-cta-id="170480579352">
-              <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLK%2Bk6XyRa%2BqM9EbtgEhu9o2gNjU5RD%2Bd5oAZi9B51dLBOor7KhLmBjxkkfhqTo%2BUQy%2BmThFvM0vCzsjzEbMZ3%2BoG0zItMYsqRlEvqbrYCoszhYbvfMhwVK%2Fo0yajRGAUnpoCcXBz7KQm3XyFTF4V6aued2kQPtE%2FlmGKwhayprUqExCog%3D%3D&webInteractiveContentId=170480579352&portalId=46454690" rel="noopener" crossOrigin="anonymous">
+              <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLK%2Bk6XyRa%2BqM9EbtgEhu9o2gNjU5RD%2Bd5oAZi9B51dLBOor7KhLmBjxkkfhqTo%2BUQy%2BmThFvM0vCzsjzEbMZ3%2BoG0zItMYsqRlEvqbrYCoszhYbvfMhwVK%2Fo0yajRGAUnpoCcXBz7KQm3XyFTF4V6aued2kQPtE%2FlmGKwhayprUqExCog%3D%3D&webInteractiveContentId=170480579352&portalId=46454690" rel="noopener" crossOrigin="anonymous " onClick={handleButtonClick}>
                 <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill'}}
                    />
               </a>

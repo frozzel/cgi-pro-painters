@@ -82,7 +82,7 @@ export default ({
   const handleButtonClick = () => {
     ReactGA.event({
       category: 'User',
-      action: 'Clicked on Free Estimate Button',
+      action: 'Clicked About',
       label: 'Free Estimate Button'
     });
   };

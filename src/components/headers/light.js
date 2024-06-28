@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import ReactGA from 'react-ga4';
+
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
@@ -59,6 +61,13 @@ export const DesktopNavLinks = tw.nav`
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
+  const handleButtonClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked Header',
+      label: 'Free Estimate Button'
+    });
+  };
 
   const defaultLogoLink = (
     <LogoLink href="/">
@@ -105,7 +114,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       </PrimaryLink> */}
       <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170481626005"
           style={{ maxWidth: '100%', maxHeight: '100%', width: '116px', height: '41px' }} data-hubspot-wrapper-cta-id="170481626005">
-          <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLOa8Q2BObIuKK%2FG%2FRgYJjrMqKF6rv5Jzw55%2Fp91TtimU98kn3veVJ0VxPFLO2StL9Dedst%2FaCmUga5LR6t79pQVH3Wk2FOmApZyH6g6lUp7KAmDtlhBwovRZIRQDzhUNfnpk1d5hRo%2F%2BCgwx5hnQ5BE%2Bb71QDOYP1MkW5hTm5Ro%2F2dEw%3D%3D&webInteractiveContentId=170481626005&portalId=46454690"rel="noopener" crossOrigin="anonymous">
+          <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLOa8Q2BObIuKK%2FG%2FRgYJjrMqKF6rv5Jzw55%2Fp91TtimU98kn3veVJ0VxPFLO2StL9Dedst%2FaCmUga5LR6t79pQVH3Wk2FOmApZyH6g6lUp7KAmDtlhBwovRZIRQDzhUNfnpk1d5hRo%2F%2BCgwx5hnQ5BE%2Bb71QDOYP1MkW5hTm5Ro%2F2dEw%3D%3D&webInteractiveContentId=170481626005&portalId=46454690"rel="noopener" crossOrigin="anonymous" onClick={handleButtonClick}>
             <img alt="Hire Us" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170481626005.png" style={{ height: '100%', width: '100%', objectFit: 'fill' }}
                />
           </a>
