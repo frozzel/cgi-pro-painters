@@ -105,6 +105,8 @@ import AgencyLandingPage from "demos/AgencyLandingPage.js";
 import ComponentRenderer from "ComponentRenderer.js";
 // import MainLandingPage from "MainLandingPage.js";
 // import ThankYouPage from "ThankYouPage.js";
+import ThankYouPage from "demos/ThankYouPage.js";
+
 
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
@@ -130,7 +132,7 @@ export default function App() {
         <Routes>
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          {/* <Route path="/thank-you" element={<ThankYouPage />} /> */}
+          <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<AgencyLandingPage />} />
           <Route path="*" element={<AgencyLandingPage />} />
           {/* <Route path="/MainLandingPage" element={<MainLandingPage />} /> */}
