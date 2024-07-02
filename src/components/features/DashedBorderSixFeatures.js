@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
-import { SectionHeading } from "components/misc/Headings.js";
+// import { SectionHeading } from "components/misc/Headings.js";
 
 import defaultCardImage from "../../images/shield-icon.svg";
 
@@ -15,13 +15,62 @@ import CustomizeIconImage from "../../images/hammer-fill-svgrepo-com.svg";
 import FastIconImage from "../../images/ladder-tool-svgrepo-com.svg";
 import ReliableIconImage from "../../images/saw-illustration-1-svgrepo-com.svg";
 import SimpleIconImage from "../../images/paint-palette-art-svgrepo-com.svg";
+import Profile from "../../images/profileCharacter.png";
 
 const Container = tw.div`relative `;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24 `}
 `;
-const Heading = tw(SectionHeading)`w-full`;
+// const Heading = tw(SectionHeading)`w-full`;
+
+const Container2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+`;
+
+const Heading2 = styled.span`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4.25rem;
+
+  @media (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
+  @media (max-width: 992px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
+`;
+
+const ProfileImage = styled.img`
+  width: 100px;
+  height: auto;
+  margin-right: 16px;
+
+  @media (max-width: 1200px) {
+    width: 80px;
+  }
+  @media (max-width: 992px) {
+    width: 70px;
+  }
+  @media (max-width: 768px) {
+    width: 60px;
+  }
+  @media (max-width: 576px) {
+    width: 50px;
+  }
+`;
 
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 px-6 flex`}
@@ -89,9 +138,18 @@ export default () => {
 
   return (
  <PrimaryBackgroundContainer>
+
     <Container>
+    
+
       <ThreeColumnContainer id="services">
-        <Heading>Our Professional <span tw="text-white">Services</span></Heading>
+      <Container2>
+      <Heading2>
+        <ProfileImage src={Profile} alt="Profile" />
+        Our Professional Services
+      </Heading2>
+    </Container2>
+        {/* <Heading style={{ display: 'flex', alignItems: 'center', textAlign: "center" }} ><img src={Profile} style={{width: 80, height: 80, marginRight: 16}} className="w-16 h-16 mr-4" />Our Professional Services</Heading> */}
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
