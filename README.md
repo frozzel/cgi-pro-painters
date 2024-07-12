@@ -1,73 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Script
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<div>
+<a href=""><img src="https://github.com/frozzel/cgi-pro-painters/blob/06d066717b711622382790064546ba1dbb6d2bd9/src/images/logo3.png" align="center" height="" width="100%" ></a></div>
 
 
-## My stuff
+# CGI Pro Painters
 
-https://www.simpleanalytics.com/glossary/google-analytics/add-google-analytics-to-react-js
+Welcome to the CGI Pro Painters GitHub Repository! This repository contains all the code and resources for our website and web applications, providing an online presence for our comprehensive painting services.
+
+   [![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/frozzel/cgi-pro-painters) [![DIGITALOCEAN](https://img.shields.io/badge/DigitalOcean-0080FF.svg?style=for-the-badge&logo=DigitalOcean&logoColor=white)](https://cgipropainters.com)
+
+## Table of Contents
+
+- [About Us](#about-us)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contact](#contact-us)
+- [Contributing](#contributing)
+- [Installation](#installation)
+- [Usage](#usage)
+
+- [License](#license)
+
+
+## Screen Shots
+
+![Screen Shots](https://github.com/frozzel/wheelhousestudios/blob/fe180da8cdb694a044e93f2f792a9b79289466fc/src/images/Screenshot1.png)
+![Screen Shots2](https://github.com/frozzel/wheelhousestudios/blob/fe180da8cdb694a044e93f2f792a9b79289466fc/src/images/Screenshot2.png)
+
+
+---
+
+## About Us
+
+CGI Pro Painters is a full-service painting company specializing in both interior and exterior painting services for commercial and residential properties. Our services include:
+
+- Interior Painting
+- Exterior Painting
+- Deck and Fence Painting/Staining
+- Color Consulting
+- Drywall Repair
+
+We are committed to providing top-notch services with a focus on quality and customer satisfaction.
+
+## Features
+
+### Client-Side Features
+
+#### Google Analytics Integration
+
+Our client-side integration with Google Analytics allows us to track and analyze website traffic, providing valuable insights into user behavior and helping us improve our services.
+
+#### HubSpot Form and CTA Integration
+
+We have integrated HubSpot forms and CTAs (Calls-to-Action) to enhance our lead generation and customer engagement efforts. This integration helps us capture leads effectively and manage customer relationships efficiently.
+
+### Server-Side Features
+
+#### ChatGPT Auto Content Publisher
+
+Our server-side includes a ChatGPT-powered auto content publisher that automatically generates and posts content to our Twitter, Instagram, and Facebook accounts. This ensures that our social media presence is consistently updated with engaging content.
+
+## Technologies Used
+
+- HTML/CSS
+- JavaScript
+- React 
+- Node.js 
+- Google Analytics
+- HubSpot API
+- OpenAI GPT-4 API (for auto content publisher)
+
+## Contact Us
+
+Interested in learning more about our services or booking a session? Get in touch with us through our [contact page](https://cgipropainters.com) or email us at [Email](mailto:admin@cgipropainters.com).
+
+
+  
+  ## Contributing 
+
+  Created by: [@frozzel](https://github.com/frozzel)
+  
+  Please contact me with questions at: frozzel@me.com
+  
+  [![Github license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
