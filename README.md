@@ -15,16 +15,13 @@ Welcome to the CGI Pro Painters GitHub Repository! This repository contains all 
 - [Technologies Used](#technologies-used)
 - [Contact](#contact-us)
 - [Contributing](#contributing)
-- [Installation](#installation)
-- [Usage](#usage)
-
 - [License](#license)
 
 
 ## Screen Shots
 
-![Screen Shots](https://github.com/frozzel/wheelhousestudios/blob/fe180da8cdb694a044e93f2f792a9b79289466fc/src/images/Screenshot1.png)
-![Screen Shots2](https://github.com/frozzel/wheelhousestudios/blob/fe180da8cdb694a044e93f2f792a9b79289466fc/src/images/Screenshot2.png)
+![Screen Shots](https://github.com/frozzel/cgi-pro-painters/blob/16c71319c5d5fb890c1149a39f0759a7a25fef34/src/images/Screenshot1.png)
+![Screen Shots2](https://github.com/frozzel/cgi-pro-painters/blob/16c71319c5d5fb890c1149a39f0759a7a25fef34/src/images/Screenshot2.png)
 
 
 ---
@@ -79,7 +76,9 @@ Interested in learning more about our services or booking a session? Get in touc
 
   Created by: [@frozzel](https://github.com/frozzel)
   
-  Please contact me with questions at: frozzel@me.com
+  Please contact me with questions at: [@frozzel](mailto:frozzel@me.com)
+
+  ## License
   
   [![Github license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
