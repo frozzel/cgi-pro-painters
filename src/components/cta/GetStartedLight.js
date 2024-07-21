@@ -16,10 +16,10 @@ const Heading = tw.h5`text-primary-500`;
 
 const LinksContainer = tw(ColumnContainer)`flex justify-center lg:justify-end mt-6 lg:mt-0 flex-col sm:flex-row`;
 
-// const Link = tw.a`w-full sm:w-auto text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 mt-4 first:mt-0 sm:mt-0 sm:mr-8 sm:last:mr-0 rounded font-bold border border-transparent tracking-wide transition duration-300 focus:outline-none focus:shadow-outline`;
-// const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-primary-500 hocus:bg-primary-700`;
+const Link = tw.a`w-full sm:w-auto text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 mt-4 first:mt-0 sm:mt-0 sm:mr-8 sm:last:mr-0 rounded font-bold border border-transparent tracking-wide transition duration-300 focus:outline-none focus:shadow-outline`;
+const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-primary-500 hocus:bg-primary-700`;
 
-// const SecondaryLink = tw(Link)`text-primary-500 hover:text-primary-600 bg-gray-100 hover:bg-gray-200`;
+const SecondaryLink = tw(Link)`text-primary-500 hover:text-primary-600 bg-gray-100 hover:bg-gray-200`;
 
 const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`
 const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-primary-500 opacity-5`
@@ -28,7 +28,7 @@ export default ({
   subheading = "Get in touch with us",
   heading = "today to get a free quote.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLmDkd7lE3krdCth%2BLjSIzk%2F0iqeD6L9jSNLIU1e4b3ufrbgvAoTTe4yUhVbwJGnMrIOJq73SKSaOQvMy6QockwngvMBjV7uzkUv5rGM4dZ1Z0%3D&webInteractiveContentId=170480579352&portalId=46454690",
+  primaryLinkUrl = "https://calendar.app.google/8XX2Big7oqWjPZBg8",
   secondaryLinkText = "Contact Us",
   secondaryLinkUrl = "/#contactus",
   pushDownFooter = true
@@ -51,21 +51,20 @@ export default ({
             <Heading>{heading}</Heading>
           </TextContainer>
           <LinksContainer>
-            {/* <PrimaryLink className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352" data-hubspot-wrapper-cta-id="170480579352" rel="noopener" crossOrigin="anonymous" href={primaryLinkUrl}>{primaryLinkText} */}
-            {/* <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill', display: "none"}}
-               /> */}
-            {/* </PrimaryLink> */}
+            <PrimaryLink className="" rel="noopener" crossOrigin="anonymous" target="_blank" onClick={handleButtonClick} href={primaryLinkUrl}>{primaryLinkText}  
+          
+            </PrimaryLink>
 
-{/* 
-            <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink> */}
 
-            <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352"
+            <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink>
+
+            {/* <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170480579352"
               style={{ maxWidth: '100%', maxHeight: '100%', width: '177px', height: '66px'}} data-hubspot-wrapper-cta-id="170480579352">
               <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLK%2Bk6XyRa%2BqM9EbtgEhu9o2gNjU5RD%2Bd5oAZi9B51dLBOor7KhLmBjxkkfhqTo%2BUQy%2BmThFvM0vCzsjzEbMZ3%2BoG0zItMYsqRlEvqbrYCoszhYbvfMhwVK%2Fo0yajRGAUnpoCcXBz7KQm3XyFTF4V6aued2kQPtE%2FlmGKwhayprUqExCog%3D%3D&webInteractiveContentId=170480579352&portalId=46454690" rel="noopener" crossOrigin="anonymous " onClick={handleButtonClick}>
                 <img alt="Get Started" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170480579352.png" style={{ height: '100%', width: '100%', objectFit: 'fill'}}
                    />
               </a>
-            </div>
+            </div> */}
 
           </LinksContainer>
         </Row>

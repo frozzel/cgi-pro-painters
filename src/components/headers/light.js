@@ -109,16 +109,16 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      {/* <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/meeting" onClick={toggleNavbar}>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} target="_blank" href="https://calendar.app.google/8XX2Big7oqWjPZBg8" onClick={toggleNavbar && handleButtonClick} >
         Hire Us
-      </PrimaryLink> */}
-      <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170481626005"
+      </PrimaryLink>
+      {/* <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170481626005"
           style={{ maxWidth: '100%', maxHeight: '100%', width: '116px', height: '41px' }} data-hubspot-wrapper-cta-id="170481626005">
           <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLOa8Q2BObIuKK%2FG%2FRgYJjrMqKF6rv5Jzw55%2Fp91TtimU98kn3veVJ0VxPFLO2StL9Dedst%2FaCmUga5LR6t79pQVH3Wk2FOmApZyH6g6lUp7KAmDtlhBwovRZIRQDzhUNfnpk1d5hRo%2F%2BCgwx5hnQ5BE%2Bb71QDOYP1MkW5hTm5Ro%2F2dEw%3D%3D&webInteractiveContentId=170481626005&portalId=46454690"rel="noopener" crossOrigin="anonymous" onClick={handleButtonClick}>
             <img alt="Hire Us" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170481626005.png" style={{ height: '100%', width: '100%', objectFit: 'fill' }}
                />
           </a>
-      </div>
+      </div> */}
 
 
     </NavLinks>

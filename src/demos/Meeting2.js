@@ -30,25 +30,36 @@ const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`
 export default () => {
   const navLinks = [];
 
-  return (
-    <Container>
+  return (<>
+   <Container>
       <OpacityOverlay />
       <HeroContainer>
         <StyledHeader  links={navLinks} />
   
             <div >
                 <div>
-                <div className="meetings-iframe-container" data-src="https://meetings.hubspot.com/cgipropainters/quote?embed=true"></div>
+                {/* <div className="meetings-iframe-container" data-src="https://meetings.hubspot.com/cgipropainters/quote?embed=true"></div> */}
                     {/* <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script> */}
-                <iframe
+                {/* <iframe
                     title={'hubspot'}
                     style={{
                     width: '100%',
                     height: '100vh'
                     }}
                     src={'https://meetings.hubspot.com/cgipropainters/quote?embed=true'}
-                />
+                /> */}
                         {/* <!-- End of Meetings Embed Script --> */}
+
+                        {/* <!-- Google Calendar Appointment Scheduling begin --> */}
+
+                        {/* <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3gwtX9lOtfxcnZe69JeHY4A-FROn-6pKF8PqvRi8gW_PFSss0kwT1XsCN1IwAA9Q3rrSLZc6qw?gv=true" 
+                          style={{border: 0}}   
+                          width="100%"  
+                          height="600" 
+                          frameborder="0">
+
+                          </iframe> */}
+                        {/* <!-- end Google Calendar Appointment Scheduling --> */}
                     
                 </div>
                
@@ -56,5 +67,5 @@ export default () => {
   
       </HeroContainer>
     </Container>
-  );
+    </>);
 };

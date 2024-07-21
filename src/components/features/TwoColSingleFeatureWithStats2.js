@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-// import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/paintbucket-removebg.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import ReactGA from 'react-ga4';
@@ -34,7 +34,7 @@ const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
 const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
 const Key = tw.div`font-medium text-primary-700`;
 
-// const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
+const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
   tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
@@ -49,8 +49,8 @@ export default ({
     </>
   ),
   description = "CGI Pro Painters® offers professional interior and exterior house painting services to locations in the greater metro Atlanta area. We take great pride in our quality painting services and high customer reviews. Click one of the links below to learn more about the painting services we offer.",
-  // primaryButtonText = "Free Estimate",
-  // primaryButtonUrl = "/meeting",
+  primaryButtonText = "Free Estimate",
+  primaryButtonUrl = "https://calendar.app.google/8XX2Big7oqWjPZBg8",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -109,16 +109,16 @@ export default ({
                 </Statistic>
               ))}
             </Statistics>
-            {/* <PrimaryButton as="a" href={primaryButtonUrl}>
+            <PrimaryButton as="a" href={primaryButtonUrl} onClick={handleButtonClick} target="_blank">
               {primaryButtonText}
-            </PrimaryButton> */}
-            <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170452886386"
+            </PrimaryButton>
+            {/* <div className="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-170452886386"
                 style={{ maxWidth: '100%', maxHeight: '100%', width: '156px', height: '45px', marginTop: '40px' }} data-hubspot-wrapper-cta-id="170452886386">
                 <a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLLvw8B5bZJZfbYEYvo7x2yi6UO%2FxOnIa6O6oFcLu%2FU5uSisMF8e9MyLUB%2FCw3OA689jnOJideCVefZ7gnsh6Rh2I9EQzOBXVYMc45QU9yssGtYc9oI4GTMznqV77Vimsj1CwzDKt1%2FXJ%2FgxjK%2FCh%2FwScnyHTS%2FVCAkBgdI%3D&webInteractiveContentId=170452886386&portalId=46454690"  rel="noopener" crossOrigin="anonymous" onClick={handleButtonClick}>
                   <img alt="Free Estimate " loading="lazy" src="https://no-cache.hubspot.com/cta/default/46454690/interactive-170452886386.png" style={{ height: '100%', width: '100%', objectFit: 'fill' }}
                     />
                 </a>
-            </div>
+            </div> */}
 
 
 
