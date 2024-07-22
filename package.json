@@ -4,9 +4,11 @@
   "private": true,
   "homepage": "https://cgi-pro-painters-client-y4ckn.ondigitalocean.app",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
+    "emailjs": "^4.0.3",
     "feather-icons": "^4.29.0",
     "framer-motion": "^7.3.2",
     "react": "^18.0.0",
