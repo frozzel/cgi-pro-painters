@@ -6,7 +6,7 @@
 
 Welcome to the CGI Pro Painters GitHub Repository! This repository contains all the code and resources for our website and web applications, providing an online presence for our comprehensive painting services.
 
-   [![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/frozzel/cgi-pro-painters) [![DIGITALOCEAN](https://img.shields.io/badge/DigitalOcean-0080FF.svg?style=for-the-badge&logo=DigitalOcean&logoColor=white)](https://cgipropainters.com)
+   [![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/frozzel/cgi-pro-painters)
 
 ## Table of Contents
 
